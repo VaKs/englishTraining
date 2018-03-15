@@ -1,4 +1,5 @@
-[{
+"multiplechoice" : [{
+"B2" : [{
 	"sentence": "...to the theatre for ages.",
 	"solution": "B",
 	"explanation": "",
@@ -283,4 +284,5 @@
 	},{
                 "letter": "D", "answer": "x-ray"
         }]
+}]
 }]

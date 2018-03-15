@@ -1,24 +1,19 @@
 var test=[];
 
-function readMultipleFiles(evt) {
-    var files = evt.target.files; 	
-    if (files) {
-        for (var i=0, f; f=files[i]; i++) {
-	          var r = new FileReader();
-            r.onload = (function(f) {
-                return function(e) {
-                    var contents = e.target.result;
-                    var content=JSON.parse(contents);
-					processContent(content);
-					showTest();
-                };
-            })(f);
-
-            r.readAsText(f);
-        }   
-    } else {
-		  swal("Failed to load the file", "try again", "error");
-    }
+function setTest(){
+	firebase.database().ref('multipleChoice').child('B2').once('value').then(function(snapshot) {
+		processContent(snapshot.val());
+		showTest();
+	});
+	/*
+	Promise.all(readData()).then(values => { 
+			alet("promise");
+			processContent(values);
+			showTest();
+		}).catch(reason => { 
+			alert(reason);
+		}));
+		*/
 }
 
 function processContent(content){
@@ -52,7 +47,7 @@ function showTest(){
 		for(var j in question.options) {
 			var op = question.options[j];
 			if((op.letter!=undefined) &&(op.answer!=undefined)){
-				output=output+"<p id='"+i+""+j+"'><input type='radio' name='"+i+"' value='"+j+"'>"+op.letter+"). "+op.answer+"</p>";
+				output=output+"<p id='"+i+""+j+"'><input type='radio' name='"+i+"' value='"+j+"'>"+op.letter+") "+op.answer+"</p>";
 			}
 		}
 	}
@@ -71,12 +66,14 @@ function toCorrect(e){
 			var answerText =document.getElementById(id);
 			if(answer[j].value==solution){
 				answerText.style.color="green";
+				answerText.style.fontWeight = "900";
 				if(answer[j].checked){
 					successCounter++;
 				}
 			} else {
 				if(answer[j].checked){
 					answerText.style.color="red";
+					answerText.style.fontWeight = "900";
 				}
 			}
 			
