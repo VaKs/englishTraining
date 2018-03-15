@@ -1,0 +1,33 @@
+<html>
+	<head>
+	
+		<script language="javascript" type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="./style/style.css" type="text/css">
+		<script language="javascript" type="text/javascript" src="./javaScript/fileHandler.js"></script>
+		<script language="javascript" type="text/javascript" src="./javaScript/FirebaseHandler.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet" />
+		
+	</head>
+	<body>
+		<div id="pagina">
+			<div id="bordeTOP"></div>
+			
+			<div id="contaiener">
+				<div id="cabecera">
+					<a href="./web/addTestForm.html" class="btn btn-success"><span class="glyphicon glyphicon-plus-sign"></span> add new test</a>
+					<h2>To get started selecct a test file:</h2>
+					<input class="btn btn-primary" type="file" id="fileinput" multiple />
+				</div>
+				
+				<div id="content">
+					<div id="test"></div>
+				</div>
+			</div>
+			
+			<div id="bordeBOT"></div>
+		</div>
+	</body>
+</html>

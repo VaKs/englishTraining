@@ -1,0 +1,286 @@
+[{
+	"sentence": "...to the theatre for ages.",
+	"solution": "B",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "I haven't been"
+	},{
+                "letter": "B", "answer": "I haven't gone"
+	},{
+               	"letter": "C", "answer": "I didn't been"
+	},{
+                "letter": "D", "answer": "I didn't gone"
+        }]
+}, {
+        "sentence": "A motorbike...  a car.",
+	"solution": "D",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "doesn't cost so much as"
+	},{
+                "letter": "B", "answer": "doesn't cost much as"
+	},{
+               	"letter": "C", "answer": "doesn't cost much than"
+	},{
+                "letter": "D", "answer": "doesn't cost as much as"
+        }]
+}, {
+        "sentence": "I told him",
+	"solution": "B",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "don't go there."
+	},{
+                "letter": "B", "answer": "not to go there."
+	},{
+               	"letter": "C", "answer": "don't to go there."
+	},{
+                "letter": "D", "answer": "that he doesn't go there."
+        }]
+}, {
+        "sentence": "I wish...",
+	"solution": "C",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "you haven't said that."
+	},{
+                "letter": "B", "answer": "you didn't said that."
+	},{
+               	"letter": "C", "answer": "you hadn't said that."
+	},{
+                "letter": "D", "answer": "you don't say that."
+        }]
+}, {
+        "sentence": "...after the accident.",
+	"solution": "B",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "He had repaired his car"
+	},{
+                "letter": "B", "answer": "He had his car repaired"
+	},{
+               	"letter": "C", "answer": "He repairs his car"
+	},{
+                "letter": "D", "answer": "He did his car repaired"
+        }]
+}, {
+        "sentence": "Don't forget... on her birthday!",
+	"solution": "A",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "to call your mother"
+	},{
+                "letter": "B", "answer": "calling your mother"
+	},{
+               	"letter": "C", "answer": "call your mother"
+	},{
+                "letter": "D", "answer": "calling to your mother"
+        }]
+}, {
+        "sentence": "If you had asked me... to the cinema with you.",
+	"solution": "C",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "I might had gone"
+	},{
+                "letter": "B", "answer": "I might have been"
+	},{
+               	"letter": "C", "answer": "I might have gone"
+	},{
+                "letter": "D", "answer": "I might would have"
+        }]
+}, {
+        "sentence": "...very early.",
+	"solution": "D",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "They are use to go to bed"
+	},{
+                "letter": "B", "answer": "They usually to go to bed"
+	},{
+               	"letter": "C", "answer": "They are used to go to bed"
+	},{
+                "letter": "D", "answer": "They are used to going to bed"
+        }]
+}, {
+        "sentence": "Choose the correct option:",
+	"solution": "A",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "What's her new boyfriend like?"
+	},{
+                "letter": "B", "answer": "What's like her new boyfriend?"
+	},{
+               	"letter": "C", "answer": "How is her new boyfriend?"
+	},{
+                "letter": "D", "answer": "How her new boyfriend is?"
+        }]
+}, {
+        "sentence": "Choose the correct option:",
+	"solution": "B",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "After we had dinner at home, we went to the theatre."
+	},{
+                "letter": "B", "answer": "After we had had dinner at home, we went to the theatre."
+	},{
+               	"letter": "C", "answer": "After dinner at home, we went to the theatre."
+	},{
+                "letter": "D", "answer": "After dinner at home, we had gone to the theatre."
+        }]
+}, {
+        "sentence": "While we ...... on the high street, a man came up to us.",
+	"solution": "A",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "were walking"
+	},{
+                "letter": "B", "answer": "walking"
+	}]
+}, {
+        "sentence": "I ...... know him, a very long time ago. ",
+	"solution": "A",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "used to"
+	},{
+                "letter": "B", "answer": "use to"
+	}]
+}, {
+        "sentence": "When they lived in Paris, they ...... to work every day.",
+	"solution": "B",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "walk"
+	},{
+                "letter": "B", "answer": "would walk"
+	}]
+}, {
+        "sentence": "Don't forget ...... him to come to dinner on Friday. ",
+	"solution": "B",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "to tell"
+	},{
+                "letter": "B", "answer": "telling"
+	}]
+}, {
+        "sentence": "Don't start ...... again. You are giving me a headache!",
+	"solution": "B",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "to complain"
+	},{
+                "letter": "B", "answer": "complaining"
+	}]
+}, {
+        "sentence": "Marbella is a beautiful town ...... the sea.",
+	"solution": "B",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "beside"
+	},{
+                "letter": "B", "answer": "besides"
+	}]
+}, {
+        "sentence": "I need your decision ...... eight o'clock.",
+	"solution": "B",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "until"
+	},{
+                "letter": "B", "answer": "by"
+	}]
+}, {
+        "sentence": "The ...... of the newspapers were full of the scandal.",
+	"solution": "B",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "titles"
+	},{
+                "letter": "B", "answer": "headlines"
+	}]
+}, {
+        "sentence": "Luggage ...... at the airport is impossible these days.",
+	"solution": "B",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "inspection"
+	},{
+                "letter": "B", "answer": "control"
+	}]
+}, {
+        "sentence": "The government is planning to ...... taxes again soon.",
+	"solution": "A",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "raise"
+	},{
+                "letter": "B", "answer": "rise"
+	}]
+}, {
+        "sentence": "Which word doesn't fit?",
+	"solution": "B",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "box office"
+	},{
+                "letter": "B", "answer": "food mixture"
+	},{
+               	"letter": "C", "answer": "stage"
+	},{
+                "letter": "D", "answer": "footlights"
+        }]
+}, {
+        "sentence": "Which word doesn't fit?",
+	"solution": "C",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "branch"
+	},{
+                "letter": "B", "answer": "leaf"
+	},{
+               	"letter": "C", "answer": "sleeve"
+	},{
+                "letter": "D", "answer": "twig"
+        }]
+}, {
+        "sentence": "Which word doesn't fit?",
+	"solution": "B",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "cooker"
+	},{
+                "letter": "B", "answer": "root"
+	},{
+               	"letter": "C", "answer": "fridge"
+	},{
+                "letter": "D", "answer": "dishwasher"
+        }]
+}, {
+        "sentence": "Which word doesn't fit?",
+	"solution": "C",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "collar"
+	},{
+                "letter": "B", "answer": "cuff"
+	},{
+               	"letter": "C", "answer": "sink"
+	},{
+                "letter": "D", "answer": "lape"
+        }]
+}, {
+        "sentence": "Which word doesn't fit?",
+	"solution": "C",
+	"explanation": "",
+        "options": [{
+        	"letter": "A", "answer": "clinic"
+	},{
+                "letter": "B", "answer": "ward"
+	},{
+               	"letter": "C", "answer": "trunk"
+	},{
+                "letter": "D", "answer": "x-ray"
+        }]
+}]
