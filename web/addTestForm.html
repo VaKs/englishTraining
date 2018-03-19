@@ -1,12 +1,12 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="../style/style.css" type="text/css">
-		<script language="javascript" type="text/javascript" src="../javaScript/insertFormHandler.js"></script>
+		<link rel="stylesheet" href="../style/style.css" type="text/css">		
+		
+		<script language="javascript" type="text/javascript" src="../javaScript/SelectTest.js"></script>
 		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet" />
-		
 	</head>
 	<body>
 		<div id="pagina">
@@ -16,10 +16,9 @@
 				<div id="cabecera">
 				<a href="../index.html" class="btn btn-info btn"><span class="glyphicon glyphicon-arrow-left"></span> Back to Main page</a>
 					<h2>Please, select a file (.txt):</h2>
-					<input class="btn btn-primary" type="file" id="fileinput" />
-					<script type="text/javascript">
-			document.getElementById('fileinput').addEventListener('change', readSingleFile, false);
-		</script>
+					<select class="btn btn-primary dropdown-toggle" id="categorySelection">
+						<option>New category</option>
+					</select>	
 				</div>
 				
 				<div id="content">
@@ -90,7 +89,6 @@
 							<div class="col-sm-offset-1 col-sm-2">
 								<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Submit</button>
 							</div>
-								<a href="javascript:resetForm()" class="btn btn-warning "><span class="glyphicon glyphicon-repeat"></span> Reset form</a>
 						  </div>
 						</form> 
 				</div>

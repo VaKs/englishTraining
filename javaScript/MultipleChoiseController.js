@@ -1,19 +1,12 @@
 var test=[];
 
 function setTest(){
-	firebase.database().ref('multipleChoice').child('B2').once('value').then(function(snapshot) {
+	test=[];
+	var category=document.getElementById("categorySelection").value;
+	firebase.database().ref('multipleChoice').child(category).once('value').then(function(snapshot) {
 		processContent(snapshot.val());
 		showTest();
 	});
-	/*
-	Promise.all(readData()).then(values => { 
-			alet("promise");
-			processContent(values);
-			showTest();
-		}).catch(reason => { 
-			alert(reason);
-		}));
-		*/
 }
 
 function processContent(content){
@@ -47,7 +40,7 @@ function showTest(){
 		for(var j in question.options) {
 			var op = question.options[j];
 			if((op.letter!=undefined) &&(op.answer!=undefined)){
-				output=output+"<p id='"+i+""+j+"'><input type='radio' name='"+i+"' value='"+j+"'>"+op.letter+") "+op.answer+"</p>";
+				output=output+"<p id='"+i+""+j+"'><input type='radio' name='"+i+"' value='"+j+"'> "+op.letter+") "+op.answer+"</p>";
 			}
 		}
 	}
