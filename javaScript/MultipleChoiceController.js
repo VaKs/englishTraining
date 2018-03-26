@@ -79,3 +79,73 @@ function toCorrect(e){
 	}
 	return false;	
 }
+
+function addTest(e){
+	var newCategory;
+	var statement;
+	var optionA;
+	var optionB;
+	var optionC;
+	var optionD;
+	var solution;
+	var explanation;
+
+	if($( "#newCategory" ).is(":visible")){
+			newCategory = $( "#newCategory" ).val();
+	}
+	statement = $( "#statement" ).val();
+	optionA = $( "#optionA" ).val();
+	optionB = $( "#optionB" ).val();
+	optionC = $( "#optionC" ).val();
+	optionD = $( "#optionD" ).val();
+	solution = $('input[name=solution]:checked').val();
+	explanation = $( "#explanation" ).val();
+
+	var newTest = {
+		sentence: statement,
+		solution: solution,
+		explanation: explanation,
+		options: []
+	};
+
+	newTest.options.push({letter: "A", answer: optionA});
+	newTest.options.push({letter: "B", answer: optionB});
+		
+	if(optionC.length !=0){
+		newTest.options.push({letter: "C", answer: optionC});
+	}
+
+	if(optionD.length !=0){
+		newTest.options.push({letter: "D", answer: optionD});
+	}
+	
+	if($( "#newCategory" ).is(":visible")){
+		writeNewTestFirebase();
+	} else {
+		writeNewTestFirebase();
+	}
+}
+
+//TODO
+function writeNewTestFirebase() {
+	alert("1");
+	firebase.database().ref('multipleChoice').child('B2').once('value').then(function(snapshot) {
+		alert("2");
+		var content = snapshot.val();
+		for(var i in content) {
+			alert(content[i]);
+			//JSON.stringify(
+		}
+	});
+	
+	
+	
+/*	
+	
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
+ */
+}

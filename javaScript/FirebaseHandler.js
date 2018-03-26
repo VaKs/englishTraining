@@ -10,7 +10,6 @@ $( document ).ready(function() {
 	};
 	firebase.initializeApp(config);
 	var database = firebase.database();
-	var dbResponse="hola";
 });
 
 function writeData() {

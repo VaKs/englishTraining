@@ -1,11 +1,23 @@
-$( document ).ready(function() {
-	alert("hola");
+$( "#categorySelection" ).ready(function() {
 	firebase.database().ref('multipleChoice').child('categories').once('value').then(function(snapshot) {
 		var content = snapshot.val();
 		var options="";
 		for(var i in content) {
-			options=options+"<option>"+content[i]+"</option>";
+			var option = document.createElement("option");
+			option.text = content[i];
+			option.value = content[i];
+			var select = document.getElementById("categorySelection");
+			select.add(option);
 		}
-		document.getElementById('categorySelection').innerHTML=options;
+	});
+	$( "#categorySelection" ).change(function() {
+		if($( "#categorySelection" ).val()=="newCategory"){
+			$( "#newCategory" ).show( "fast" );
+			$( "#newCategory" ).val( "" );
+		} else {
+			$( "#newCategory" ).hide( "fast" );
+			$( "#newCategory" ).val( "none" );
+		}
+		
 	});
 });
