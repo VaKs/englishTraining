@@ -11,7 +11,7 @@ $( document ).ready(function() {
 	firebase.initializeApp(config);
 	var database = firebase.database();
 });
-
+/*  Write and read
 function writeData() {
   firebase.database().ref('prueba/').set({
     id : 2
@@ -23,3 +23,4 @@ function readData(){
 		return snapshot.val();
 	});
 }
+*/

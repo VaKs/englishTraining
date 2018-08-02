@@ -1,4 +1,5 @@
 var test=[];
+alert("Hola");
 
 function setTest(){
 	test=[];
@@ -81,7 +82,7 @@ function toCorrect(e){
 }
 
 function addTest(e){
-	var newCategory;
+	var category;
 	var statement;
 	var optionA;
 	var optionB;
@@ -91,7 +92,7 @@ function addTest(e){
 	var explanation;
 
 	if($( "#newCategory" ).is(":visible")){
-			newCategory = $( "#newCategory" ).val();
+			category = $( "#newCategory" ).val();
 	}
 	statement = $( "#statement" ).val();
 	optionA = $( "#optionA" ).val();
@@ -118,34 +119,16 @@ function addTest(e){
 	if(optionD.length !=0){
 		newTest.options.push({letter: "D", answer: optionD});
 	}
-	
+
 	if($( "#newCategory" ).is(":visible")){
-		writeNewTestFirebase();
+		writeNewTestFirebase(newTest);
 	} else {
-		writeNewTestFirebase();
+		writeNewTestFirebase(newTest);
 	}
+	return false;
 }
 
-//TODO
-function writeNewTestFirebase() {
+ function writeNewTestFirebase(newTest) {
 	alert("1");
-	firebase.database().ref('multipleChoice').child('B2').once('value').then(function(snapshot) {
-		alert("2");
-		var content = snapshot.val();
-		for(var i in content) {
-			alert(content[i]);
-			//JSON.stringify(
-		}
-	});
-	
-	
-	
-/*	
-	
-  firebase.database().ref('users/' + userId).set({
-    username: name,
-    email: email,
-    profile_picture : imageUrl
-  });
- */
+	firebase.database().ref('multipleChoice/').child('B2').push(newTest);
 }
