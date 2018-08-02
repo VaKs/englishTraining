@@ -1,5 +1,4 @@
 var test=[];
-alert("Hola");
 
 function setTest(){
 	test=[];
@@ -121,7 +120,7 @@ function addTest(e){
 	}
 
 	if($( "#newCategory" ).is(":visible")){
-		writeNewTestFirebase(newTest);
+		writeNewTestFirebase(newTest,category);
 	} else {
 		writeNewTestFirebase(newTest);
 	}
@@ -129,6 +128,10 @@ function addTest(e){
 }
 
  function writeNewTestFirebase(newTest) {
-	alert("1");
 	firebase.database().ref('multipleChoice/').child('B2').push(newTest);
+}
+
+ function writeNewTestFirebase(newTest,category) {
+	firebase.database().ref('multipleChoice/').child(category).push(newTest);
+	firebase.database().ref('multipleChoice/').child("categories").push(category);
 }
